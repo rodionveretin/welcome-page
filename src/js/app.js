@@ -1,29 +1,44 @@
-import * as flsFunctions from './modules/functions.js';
-import Swiper, { Navigation, Pagination } from 'swiper';
 
-flsFunctions.isWebp();
+const videoElem = document.querySelector('video');
+const playButton = document.querySelector('.greeting__button');
+const background = document.querySelector('.greeting__background');
+const pause = document.querySelector('#pause');
+const play = document.querySelector('#play');
+const previewPicture = document.querySelector('.greeting__preview');
 
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination]);
 
-const swiperReasons = new Swiper('.reasons-block__slider', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
-  slidesPerView: 3,
-  watchOverflow: true,
-  allowTouchMove: false,
-  slidesPerGroup: 3,
+playButton.addEventListener('click', handlePlayButton, false);
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+async function playVideo() {
+  try {
+    await videoElem.play();
+    playButton.classList.add('playing');
+  } catch (err) {
+    playButton.classList.remove('playing');
+  }
+}
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.slider__button-next',
-    prevEl: '.slider__button-prev',
-  },
+function handlePlayButton() {
+  if (videoElem.paused) {
+    previewPicture.classList.add('hidden');
+    playVideo();
+    background.classList.add('greeting__background--hidden');
+    pause.classList.remove('hidden');
+    play.classList.add('hidden');
+  } else {
+    videoElem.pause();
+    background.classList.remove('greeting__background--hidden');
+    pause.classList.add('hidden');
+    play.classList.remove('hidden');
+  }
+}
+
+background.addEventListener('mouseover', () => {
+  playButton.classList.remove('greeting__button--hidden');
+});
+
+background.addEventListener('mouseout', () => {
+  if (!videoElem.paused) {
+    playButton.classList.add('greeting__button--hidden');
+  }
 });

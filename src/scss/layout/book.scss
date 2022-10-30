@@ -1,0 +1,56 @@
+.book {
+  background-image: url(../img/book-bg.png);
+  background-repeat: no-repeat;
+  &__wrapper {
+    height: 800px;
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    bottom: -40px;
+    left: -15px;
+  }
+  &__quote {
+    padding-top: 185px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 400px;
+      height: 200px;
+      background-image: url("../img/cloud-2.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 9;
+    }
+    span {
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      text-transform: uppercase;
+      color: #424D60;
+      max-width: 400px;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: end;
+    padding-top: 215px;
+    a {
+      color: #FFFFFF;
+      background: #B91827;
+      border-radius: 18px;
+      padding: 15px 80px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+}

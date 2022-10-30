@@ -1,0 +1,59 @@
+.greeting {
+  background-image: url(../img/bg-2.png);
+  &__wrapper {
+    padding: 77px 0 170px 0;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+    max-width: 540px;
+    color: #424D60;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+  &__preview {
+    position: absolute;
+  }
+  &__video {
+    position: relative;
+    width: 788px;
+    height: 440px;
+    margin: 0 auto;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+  &__button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) ;
+    background: rgba(217, 217, 217, 0.5);
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity .3s;
+    &--hidden {
+      opacity: 0;
+      transition: opacity .3s;
+    }
+  }
+  &__background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(66, 77, 96, 0.46), rgba(66, 77, 96, 0.46));
+    &--hidden {
+      background: unset;
+    }
+  }
+}

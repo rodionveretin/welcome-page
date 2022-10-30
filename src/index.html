@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 @@include('html/head.html',{
 "title":"Главная"
 })
@@ -7,8 +7,347 @@
 @@include('html/header.html',{})
   <main>
 
+    <section class="greeting">
+      <div class="container">
+        <div class="greeting__wrapper">
+          <div class="greeting__title title">Приветственное слово</div>
+          <div class="greeting__video">
+            <div class="greeting__preview"><img src="./img/preview.png" alt=""></div>
+            <video>
+              <source src="demo.mp4" type="video/mp4">
+            </video>
+            <div class="greeting__background">
+              <button class="greeting__button">
+                <svg id="play" width="32" height="48" viewBox="0 0 32 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.5841 23.92L0.340181 47.1625L0.340183 0.677561L31.5841 23.92Z" fill="#D9D9D9"/>
+                </svg>
+                <svg id="pause" class="hidden" width="39" height="47" viewBox="0 0 39 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="14" height="47" fill="#D9D9D9"/>
+                  <rect x="25" width="14" height="47" fill="#D9D9D9"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-top">
+        <div class="container">
+          <div class="about-top__wrapper">
+            <div class="about-top__left">
+              <div class="about-top__title title">О Комплексе</div>
+              <p class="about-top__text">
+                Комплекс экономической политики и имущественно-земельных отношений города Москвы занимается вопросами экономического регулирования, направленными на формирование и развитие благоприятной деловой среды в столице. Ведомства, <a href="#">входящие в структуру Комплекса</a>, занимаются разработкой и реализацией государственной политики города Москвы в сфере экономики и имущественно-земельных отношений, оценочной и инвестиционной деятельностью, финансовой, тарифной, конкурентной, ценовой и налоговой политикой.
+              </p>
+              <div class="about-top__button"><a href="#" target="_blank">Узнать стратегические цели Комплекса</a></div>
+            </div>
+            <div class="about-top__right">
+              <div class="about-top__card about-card">
+                <div class="about-card__header">Миссия Комплекса</div>
+                <div class="about-card__body">Развиваем Москву в интересах страны, эффективно управляя ресурсами в меняющихся условиях внешней среды</div>
+              </div>
+              <div class="about-top__card about-card">
+                <div class="about-card__header">Видение Комплекса</div>
+                <div class="about-card__body">Москва - локомотив экономики страны с 20% долей в ВВП России и среднегодовым ростом ВРП не менее 3% в год к 2024 году</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-bottom">
+        <div class="container">
+          <div class="about-bottom__wrapper">
+            <div class="about-bottom__img"><img src="img/hint-1.png" alt=""></div>
+            <div class="about-bottom__text">
+              Узнать больше информации <br> о Комплексе можно в вводном курсе
+            </div>
+            <div class="about-bottom__button"><a href="#" target="_blank">Пройти вводный курс</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values">
+      <div class="container">
+        <div class="values__wrapper">
+          <div class="value__title title">Наши ценности</div>
+          <div class="values__cards values-cards">
+            <div class="values-cards__item">
+              <div class="values-cards__img"><img src="img/value-1.png" alt=""></div>
+              <div class="values-cards__caption">Я <br> профессионал</div>
+              <ul class="values-cards__descr">
+                <li class="values-cards__paragraph">Я выполняю свою работу честно, я объективен</li>
+                <li class="values-cards__paragraph">Я соблюдаю закон и этические принципы</li>
+                <li class="values-cards__paragraph">Я несу ответственность за свою профессиональную деятельность и свое профессиональное развитие</li>
+              </ul>
+            </div>
+            <div class="values-cards__item">
+              <div class="values-cards__img"><img src="img/value-2.png" alt=""></div>
+              <div class="values-cards__caption">Наша команда эффективна</div>
+              <ul class="values-cards__descr">
+                <li class="values-cards__paragraph">Мы опытная команда, которая предлагает и реализует эффективные решения, бережно и ответственно управляет ввереными нам ресурсами</li>
+                <li class="values-cards__paragraph">Мы с готовностью сотрудничаем и поддерживаем друг друга, чтобы достигнуть цели</li>
+                <li class="values-cards__paragraph">Мы признаем достижения своих коллег и говорим «спасибо»</li>
+              </ul>
+            </div>
+            <div class="values-cards__item">
+              <div class="values-cards__img"><img src="img/value-3.png" alt=""></div>
+              <div class="values-cards__caption">Мы совершенствуем город</div>
+              <ul class="values-cards__descr">
+                <li class="values-cards__paragraph">Мы предоставляем качественный сервис и постоянно его улучшаем, учитывая требования современного мира</li>
+                <li class="values-cards__paragraph">Мы создаем возможности, предвосхищая потребности граждан и юридических лиц</li>
+                <li class="values-cards__paragraph">Для нас важно проявлять инициативу и работать оперативно</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="game">
+      <div class="container">
+        <div class="game__wrapper">
+          <div class="game__header">
+            <div class="game__subtitle">деловая игра</div>
+            <div class="game__title title">«Живые ценности»</div>
+          </div>
+          <div class="game__descr">
+            Вникнуть в суть корпоративных ценностей и сопоставить их с личными установками, сформировать умение учитывать ценности при принятии решений можно на деловой игре «Живые ценности». 
+          </div>
+          <div class="game__button"><a href="#" target="_blank">Записаться на  игру</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book">
+      <div class="container">
+        <div class="book__wrapper">
+          <div class="book__img"><img src="./img/book-reader.png" alt=""></div>
+          <div class="book__quote"><span>Ознакомьтесь <br> с книгой ценностей <br> комплекса</span></div>
+          <div class="book__button"><a href="#" target="_blank">Скачать «Книгу ценностей»</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="competencies">
+      <div class="container">
+        <div class="competencies__wrapper">
+          <div class="competencies__title title">Все компетенции Комплекса</div>
+
+          <div class="competencies__header">
+            <span>Ценности<br>+ценностные компетенции</span>
+            <span>Стратегические<br>компетенции</span>
+          </div>
+          <div class="competencies__top competencies-top">
+            <div class="competencies-top__row">
+              <div class="competencies-top__pointer pointer">
+                <div class="pointer__caption">
+                  Я профессионал
+                </div>
+                <div class="pointer__img">
+                  <img src="./img/subtract.svg" alt="">
+                </div>
+              </div>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-1.png" alt=""></div>
+                <div class="competencies-top__title">Профессионализм</div>
+              </a>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-2.png" alt=""></div>
+                <div class="competencies-top__title">Проактивность</div>
+              </a>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-3.png" alt=""></div>
+                <div class="competencies-top__title">Эффективное взаимодействие</div>
+              </a>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-4.png" alt=""></div>
+                <div class="competencies-top__title">Саморазвитие</div>
+              </a>
+            </div>
+            <div class="competencies-top__row">
+              <div class="competencies-top__pointer pointer">
+                <div class="pointer__caption">
+                  Наша команда эффективна
+                </div>
+                <div class="pointer__img">
+                  <img src="./img/subtract.svg" alt="">
+                </div>
+              </div>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-5.png" alt=""></div>
+                <div class="competencies-top__title">Обеспечение сотрудничества</div>
+              </a>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-6.png" alt=""></div>
+                <div class="competencies-top__title">Ориентация на людей</div>
+              </a>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-7.png" alt=""></div>
+                <div class="competencies-top__title">Принятие решений</div>
+              </a>
+            </div>
+            <div class="competencies-top__row">
+              <a href="#" class="competencies-top__pointer pointer">
+                <div class="pointer__caption">
+                  Мы совершенствуем город
+                </div>
+                <div class="pointer__img">
+                  <img src="./img/subtract.svg" alt="">
+                </div>
+              </a>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-8.png" alt=""></div>
+                <div class="competencies-top__title">Управление изменениями</div>
+              </a>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-9.png" alt=""></div>
+                <div class="competencies-top__title">Инновативность</div>
+              </a>
+              <a href="#" class="competencies-top__item">
+                <div class="competencies-top__img"><img src="./img/competencies/image-10.png" alt=""></div>
+                <div class="competencies-top__title">Исполнительность</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="competencies__bottom competencies-bottom">
+            <div class="competencies-bottom__title">Управление командой</div>
+            <div class="competencies-bottom__cards">
+              <a href="#" class="competencies-bottom__item">
+                <div class="competencies-bottom__img"><img src="./img/competencies/image-11.png" alt=""></div>
+                <div class="competencies-bottom__caption">Лидерство</div>
+              </a>
+              <a href="#" class="competencies-bottom__item">
+                <div class="competencies-bottom__img"><img src="./img/competencies/image-12.png" alt=""></div>
+                <div class="competencies-bottom__caption">Коммуникация и влияние</div>
+              </a>
+              <a href="#" class="competencies-bottom__item">
+                <div class="competencies-bottom__img"><img src="./img/competencies/image-13.png" alt=""></div>
+                <div class="competencies-bottom__caption">Развитие команд</div>
+              </a>
+              <a href="#" class="competencies-bottom__item">
+                <div class="competencies-bottom__img"><img src="./img/competencies/image-14.png" alt=""></div>
+                <div class="competencies-bottom__caption">Управление процессами</div>
+              </a>
+              <a href="#" class="competencies-bottom__item">
+                <div class="competencies-bottom__img"><img src="./img/competencies/image-15.png" alt=""></div>
+                <div class="competencies-bottom__caption">Управление проектами</div>
+              </a>
+            </div>
+            <div class="competencies-bottom__button"><a href="#" target="_blank">Профиль эффективного сотрудника</a></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="manual">
+      <div class="container">
+        <div class="manual__wrapper">
+          <div class="manual__img"><img src="img/book.png" alt=""></div>
+          <div class="manual__descr">
+            <div class="manual__title">Книга новичка</div>
+            <div class="manual__text">Вся полезная информация о вашей организации в одном месте</div>
+            <div class="manual__button"><a href="#" target="_blank">Скачать  «Книгу новичка»</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plan">
+      <div class="container">
+        <div class="plan__wrapper">
+          <div class="plan__text">Быстро влиться в корпоративную культуру Комплекса поможет план адаптации</div>
+          <div class="plan__button"><a href="#" target="_blank">Мой план адаптации</a></div>
+          <div class="plan__img"><img src="img/plan-persons.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="culture">
+      <div class="container">
+        <div class="culture__wrapper">
+          <div class="culture__cards culture-cards">
+            <a href="#" class="culture-cards__card">
+              <div class="culture-cards__title">Программа <br> лояльности</div>
+              <div class="culture-cards__img"><img src="img/culture-card-1.png" alt=""></div>
+            </a>
+            <a href="#" class="culture-cards__card">
+              <div class="culture-cards__title">Корпоративный <br> спорт</div>
+              <div class="culture-cards__img"><img src="img/culture-card-2.png" alt=""></div>
+            </a>
+            <a href="#" class="culture-cards__card">
+              <div class="culture-cards__title">Онлайн-<br>библиотека</div>
+              <div class="culture-cards__img"><img src="img/culture-card-3.png" alt=""></div>
+            </a>
+          </div>
+          <div class="culture__text">Узнать больше о корпоративной культуре Комплекса</div>
+          <div class="culture__button"><a href="#" target="_blank">Корпоративная культура</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="history">
+      <div class="container">
+        <div class="history__wrapper">
+          <div class="history__left">
+            <div class="history__title title">История <br> успеха</div>
+            <div class="history__button"><a href="#" target="_blank">Смотреть все</a></div>
+          </div>
+          <div class="history__right history-cards">
+            <div class="history-cards__item">
+              <div class="history-cards__img"><img src="./img/person-1.png" alt=""></div>
+              <div class="history-cards__descr"><span>Владислав Спирин</span></div>
+            </div>
+            <div class="history-cards__item">
+              <div class="history-cards__img"><img src="./img/person-2.png" alt=""></div>
+              <div class="history-cards__descr"><span>Александр Зинин</span></div>
+            </div>
+            <div class="history-cards__item">
+              <div class="history-cards__img"><img src="./img/person-3.png" alt=""></div>
+              <div class="history-cards__descr"><span>Сергей Файнгерш</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="laws">
+      <div class="container">
+        <div class="laws__wrapper">
+          <div class="laws__title title">Это должен знать каждый</div>
+          <div class="laws__cards">
+            <a href="#" class="laws__item">
+              <div class="laws__name">Федеральный закон № 79-ФЗ от 27.07.2004 г.</div>
+              <div class="laws__descr">«О государственной гражданской службе Российской Федерации»</div>
+            </a>
+            <a href="#" class="laws__item">
+              <div class="laws__name">Закон города Москвы № 3 от 26.01.2005 г.</div>
+              <div class="laws__descr">«О государственной гражданской службе города Москвы»</div>
+            </a>
+            <a href="#" class="laws__item">
+              <div class="laws__name">Указ Президента Российской Федерации № 68 от 21.02.2019 г.</div>
+              <div class="laws__descr">«О профессиональном развитии государственных гражданских служащих Российской Федерации»</div>
+            </a>
+            <a href="#" class="laws__item">
+              <div class="laws__name">Постановление Правительства № 112-ПП от 21.02.2006 г.</div>
+              <div class="laws__descr">«О Регламенте Правительства Москвы»</div>
+            </a>
+            <a href="#" class="laws__item">
+              <div class="laws__name">Федеральный закон № 273-ФЗ от 25.12.2008 г.</div>
+              <div class="laws__descr">«О противодействии коррупции»</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> 
+
   </main>
 @@include('html/footer.html',{})
+<script src="js/app.min.js"></script>
 </body>
 
 </html>

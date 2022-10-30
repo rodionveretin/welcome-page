@@ -39,36 +39,7 @@
   line-height: rem(40);
 }
 
-.montserrat-text-l {
-  font-family: $fontFamilyMontserrat;
-  font-weight: 400;
-  font-size: rem(24);
-  line-height: rem(30);
-}
 
-.montserrat-text-m {
-  font-family: $fontFamilyMontserrat;
-  font-weight: 500;
-  font-size: rem(18);
-  line-height: rem(24);
-
-  @media (max-width: 1024px) {
-    font-size: rem(14);
-    line-height: rem(22);
-  }
-
-  @media (max-width: 568px) {
-    font-size: rem(12);
-    line-height: rem(18);
-  }
-}
-
-.montserrat-text-s {
-  font-family: $fontFamilyMontserrat;
-  font-weight: 400;
-  font-size: rem(18);
-  line-height: rem(24);
-}
 
 .hidden {
   display: none !important;
@@ -93,4 +64,10 @@
 
 .btn-card-text-show {
   cursor: default;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  color: #424D60;
 }

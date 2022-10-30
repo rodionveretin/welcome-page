@@ -1,0 +1,57 @@
+.culture {
+  padding: 55px 0 58px 0;
+  background: #C5DFF2;
+  &__cards {
+    margin-bottom: 55px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #424D60;
+    margin-bottom: 50px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    a {
+      color: #FFFFFF;
+      background: #B91827;
+      border-radius: 18px;
+      padding: 15px 52px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+}
+
+.culture-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    height: 500px;
+    box-shadow: 0px 4px 15px rgba(115, 170, 209, 0.7);
+    background: linear-gradient(180deg, #EFF7FF 0%, #FFFFFF 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
+    border-radius: 18px;
+    &:hover {
+      background: linear-gradient(180deg, #EFF7FF 0%, #FFFFFF 100%);
+      box-shadow: 0px 8px 10px rgba(143, 211, 244, 0.6);
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6EB1D2;
+    margin-top: 55px;
+  }
+}

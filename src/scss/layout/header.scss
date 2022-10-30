@@ -1,0 +1,46 @@
+.header {
+  position: relative;
+  background-image: url(../img/banner.png);
+  height: 770px;
+}
+
+.persons {
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% + 95px);
+    transform: translateX(-50%);
+  }
+  &__quote {
+    padding-top: 150px;
+    padding-left: 800px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 400px;
+      height: 200px;
+      background-image: url("../img/cloud-1.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 9;
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      text-transform: uppercase;
+      color: #424D60;
+      max-width: 350px;
+    }
+  }
+}

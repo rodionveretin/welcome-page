@@ -1,0 +1,41 @@
+.game {
+  background-image: url(../img/game-bg.png);
+  height: 600px;
+  &__wrapper {
+    padding: 105px 0;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 42px;
+    color: #DD4C68;
+    text-align: right;
+    margin-right: 27px;
+  }
+  &__header {
+    display: inline-block;
+  }
+  &__title {
+    color: #424D60;
+    margin-bottom: 65px;
+    line-height: 0.5;
+  }
+  &__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 440px;
+    margin-bottom: 65px;
+  }
+  &__button {
+    a {
+      color: #FFFFFF;
+      background: #B91827;
+      border-radius: 18px;
+      padding: 15px 80px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+}
